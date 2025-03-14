@@ -4,8 +4,6 @@
 
 senha = input ('Senha: ')
 
-print (type(senha))
-
 if senha == '123456':
     print('Entrou')
 else:

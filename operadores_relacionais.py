@@ -1,10 +1,17 @@
-# Variáveis são usadas para salvar algo na memória do computador.
-# PEP8: Inicie variáveis com letras minúsculas, pode usar números e underlines __
-# O sinal de = é o operador de atribuição. Ele é usado para atribuir um valor a um nome (variável.)
-# Uso: nome_variavel = expressão
+# Operadores de comparação (relacionais)
+# OP      Significado     Exemplo (True)
+# >         maior            2 > 1
+# >=     maior ou igual      2 >= 2
+# <         menor            1 < 2
+# <=     menor ou igual      2 <= 2
+# ==        igual            'a' == 'a'
+# !=      diferente          'a' != 'b'
 
-nome = "Gabriel"
-idade = 30
-maior_de_idade = idade >= 18
-print("Nome: ", nome, "Idade: ", idade)
-print("É maior? ", maior_de_idade)
+maior = 2 > 1
+maior_ou_igual = 2>= 2
+menor = 1 < 2
+menor_ou_igual = 2 <= 2
+igual = 'a' == 'a'
+diferente = 's' != 'b'
+print(diferente)
+
