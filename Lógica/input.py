@@ -1,0 +1,7 @@
+# input("Qual o seu nome? ")
+nome = input("Qual o seu nome? ")
+print(f"o seu nome é {nome}")
+idade1 = int(input("Digite sua idade: "))
+print(f"Sua idade é {idade1}")
+idade2 = int(input("Digite quantos anos você faz ano que vem: "))
+print (f"A soma da sua idade atual com a sua idade ano que vem é: {idade1 + idade2}")
