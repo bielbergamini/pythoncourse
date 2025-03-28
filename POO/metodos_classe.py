@@ -9,6 +9,7 @@ class Carro:
 fusca = Carro('Fusca')
 print(fusca.nome)
 fusca.acelerar()
+Carro.acelerar(fusca)
     
 
 

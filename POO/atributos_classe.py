@@ -1,43 +1,16 @@
-class Camera:
-    def __init__(self, nome, filmando=False):
+class Pessoa:
+    ano_atual = 2025
+
+    def __init__(self, nome, idade):
         self.nome = nome
-        self.filmando = filmando
+        self.idade = idade
 
-    def filmar(self):
-        if self.filmando:
-            print(f'{self.nome} Já está filmando')
-            return
-
-        print(f'{self.nome} está filmando...')
-        self.filmando = True
-
-    def parar_filmar(self):
-        if not self.filmando:
-            print(f'{self.nome} Não está filmando')
-            return
-        
-        print(f'{self.nome} está parando de filmar...')
-        self.filmando = False
-
-
-
+    def get_ano_nascimento(self):
+        return Pessoa.ano_atual - self.idade
     
-    def fotografar(self):
-        if self.filmando:
-            print(f'{self.nome} não pode fotografar enquanto filma')
-            return
-        
-        print(f'{self.nome} está fotografando')
+p1 = Pessoa('Joao', 35)
+    
 
-
-
-c1 = Camera('Canon')
-c2 = Camera('Sony')
-c1.filmar()
-c2.filmar()
-c1.fotografar()
-c1.parar_filmar()
-c1.fotografar()
         
 
                                                

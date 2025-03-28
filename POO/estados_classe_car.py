@@ -1,43 +1,13 @@
-class Camera:
-    def __init__(self, nome, filmando=False):
+class Car:
+    def __init__(self, nome, acelerando=False):
         self.nome = nome
-        self.filmando = filmando
+        self.acelerando = acelerando
 
-    def filmar(self):
-        if self.filmando:
-            print(f'{self.nome} Já está filmando')
-            return
-
-        print(f'{self.nome} está filmando...')
-        self.filmando = True
-
-    def parar_filmar(self):
-        if not self.filmando:
-            print(f'{self.nome} Não está filmando')
-            return
-        
-        print(f'{self.nome} está parando de filmar...')
-        self.filmando = False
+        def acelerar(self):
+            if acelerando:
+                print(f'{nome} está acelerando')
 
 
-
-    
-    def fotografar(self):
-        if self.filmando:
-            print(f'{self.nome} não pode fotografar enquanto filma')
-            return
-        
-        print(f'{self.nome} está fotografando')
-
-
-
-c1 = Camera('Canon')
-c2 = Camera('Sony')
-c1.filmar()
-c2.filmar()
-c1.fotografar()
-c1.parar_filmar()
-c1.fotografar()
         
 
                                                
