@@ -1,14 +1,15 @@
-lista = ['1']
+calorias = []
+resposta = ""
 
-lista.insert(1, 3)
-lista.append('Teste de inserção')
+while resposta.upper() != 'NÃO':
+    caloria = input('Quantas calorias você conseguiu nesta refeição?')
+    calorias.append(caloria)
+    resposta = input('Você deseja informar as calorias de mais uma refeição?')
 
-print(lista[2])
+total = 0
+for caloria in calorias:
+    print(f'Nesta refeição foram consumidas {caloria} calorias')
+    total = total + caloria
 
-for valor in lista:
-    print(valor)
-
-lista.pop()
-print(lista)
-lista.remove(1)
-print(lista)
+media = total/ len(calorias)
+print('Neste dia, houve um consumo médio de {media} calorias por refeição')
