@@ -133,12 +133,23 @@
 
 #-------------------------------------------------------------------------------------------------------------------------------------------------
 
-hora = int(input('Digite um número inteiro: '))
+# hora = int(input('Digite um número inteiro: '))
 
-if hora % 2 == 0:
-    print('O número é par')
+# if hora % 2 == 0:
+#     print('O número é par')
+# else:
+#     print('O número é impar')
+#-------------------------------------------------------------------------------------------------------------------------------------------------
+
+renda = float(input("Digite o valor da sua renda mensal: "))
+parcela = float(input("Digite o valor da parcela desejada: "))
+
+if renda > 2000 and parcela <= 0.3 * renda:
+    print("Empréstimo aprovado!")
+elif renda <= 2000:
+    print("Empréstimo negado: renda insuficiente.")
 else:
-    print('O número é impar')
+    print("Empréstimo negado: parcela acima de 30% da renda.")
 
 
 
