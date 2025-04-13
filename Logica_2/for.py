@@ -70,15 +70,33 @@
 # print('Aproveite a promoção agora!')
 
 #--------------------------------------------------------------------------------------------------------------------------
-livros = [
-    {"nome": "1984", "estoque": 5},
-    {"nome": "Dom Casmurro", "estoque": 0},
-    {"nome": "O Pequeno Príncipe", "estoque": 3},
-    {"nome": "O Hobbit", "estoque": 0},
-    {"nome": "Orgulho e Preconceito", "estoque": 2}
-]
 
-for livro in livros:
-    if livro["estoque"] == 0:
+# livros = [
+#     {"nome": "1984", "estoque": 5},
+#     {"nome": "Dom Casmurro", "estoque": 0},
+#     {"nome": "O Pequeno Príncipe", "estoque": 3},
+#     {"nome": "O Hobbit", "estoque": 0},
+#     {"nome": "Orgulho e Preconceito", "estoque": 2}
+# ]
+
+# for livro in livros:
+#     if livro["estoque"] == 0:
+#         continue
+#     print(f"Livro disponível: {livro['nome']}")
+
+#--------------------------------------------------------------------------------------------------------------------------
+
+while True:
+    nome_usuario = input("Digite seu nome de usuário: ")
+    senha = input("Digite sua senha: ")
+
+    if len(nome_usuario) < 5:
+        print("O nome de usuário deve ter pelo menos 5 caracteres.")
         continue
-    print(f"Livro disponível: {livro['nome']}")
+
+    if len(senha) < 8:
+        print("A senha deve ter pelo menos 8 caracteres.")
+        continue
+
+    print("Cadastro realizado com sucesso!")
+    break
