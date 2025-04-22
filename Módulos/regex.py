@@ -30,13 +30,30 @@
 import re
 import re
 
-texto = "Entre em contato pelo email support@example.com"
+# texto = "Entre em contato pelo email support@example.com"
 
-padrao_email = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
+# padrao_email = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'
 
-resultado = re.search(padrao_email, texto)
+# resultado = re.search(padrao_email, texto)
 
-if resultado:
-    print("Email encontrado:", resultado.group())
-else:
-    print("Nenhum email encontrado.")
+# if resultado:
+#     print("Email encontrado:", resultado.group())
+# else:
+#     print("Nenhum email encontrado.")
+
+# produto = input('Digite o nome do produto: ')
+
+# produto_padrao = produto.strip().lower()
+# print(produto_padrao)
+
+# nome = input('Digite o nome do cliente: ')
+# cidade = input('Digite a cidade do cliente: ')
+
+
+# print(f'Olá {nome}! Bem vinda ao sistema da cidade de {cidade}.')
+
+texto = input("Digite a palavra-chave: ")  
+primeiras = texto[:3]
+ultimas = texto[-3:]
+print(f"Primeiras: {primeiras}")
+print(f"Últimas: {ultimas}")
