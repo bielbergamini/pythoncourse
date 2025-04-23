@@ -52,8 +52,30 @@ import re
 
 # print(f'Olá {nome}! Bem vinda ao sistema da cidade de {cidade}.')
 
-texto = input("Digite a palavra-chave: ")  
-primeiras = texto[:3]
-ultimas = texto[-3:]
-print(f"Primeiras: {primeiras}")
-print(f"Últimas: {ultimas}")
+# texto = input("Digite a palavra-chave: ")  
+# primeiras = texto[:3]
+# ultimas = texto[-3:]
+# print(f"Primeiras: {primeiras}")
+# print(f"Últimas: {ultimas}")
+
+# url = input("Digite a URL para validação: ") 
+# if url.startswith("https://") and url.endswith(".com"):
+#     print("URL válida!")
+# else:
+#     print("URL inválida!")
+
+
+
+# texto = input("Digite a descrição da receita: ")  
+# numero = re.findall(r'\d+', texto)[0]  
+# print(f"O número da receita é: {numero}")
+
+import re
+
+cpf = input("Digite o CPF no formato XXX.XXX.XXX-XX: ")  
+padrao = r'\d{3}\.\d{3}\.\d{3}-\d{2}'
+
+if re.search(padrao, cpf):
+    print("O CPF está no formato correto.")
+else:
+    print("O CPF está no formato incorreto.")
