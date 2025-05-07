@@ -2,7 +2,7 @@
 tupla = ('Gabriel' , 1.85, 80)
 # Exibindo
 
+for tup in tupla:
 
-print(tupla[2])
 # for valor in tupla:
 #     print(valor)
